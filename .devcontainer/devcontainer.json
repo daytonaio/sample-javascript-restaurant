@@ -1,0 +1,22 @@
+{
+  "name": "Restaurant Website Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript:latest",
+  "forwardPorts": [
+    3000
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "html.format.enable": true,
+        "css.validate": true,
+        "javascript.validate.enable": true
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "hexBear.indent-buffer"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install"
+}
